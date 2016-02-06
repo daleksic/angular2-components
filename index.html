@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Angular 2 custom components</title>
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
@@ -23,9 +23,16 @@
       System.import('app/main')
             .then(null, console.error.bind(console));
     </script>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            background-color: #e5e5e5;
+        }
+    </style>
   </head>
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <app>Loading...</app>
   </body>
 </html>
